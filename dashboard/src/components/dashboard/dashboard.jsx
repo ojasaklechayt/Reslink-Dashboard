@@ -83,6 +83,7 @@ const Dashboard = () => {
             display: "flex",
             alignItems: "center",
             width: "10%", // Updated width for responsiveness
+            height: "90%", // Updated height for responsiveness
             background: "black",
             borderRadius: "25px",
             fontFamily: "Poppins, sans-serif",
