@@ -72,8 +72,8 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         <button
           className={`${
             sidebarVisible
-              ? "lg:hidden fixed top-4 left-4 z-50 text-white"
-              : "lg:hidden absolute top-4 left-4 z-50 text-white"
+              ? "lg:hidden fixed top-8 left-4 z-50 text-white"
+              : "lg:hidden absolute top-8 left-4 z-50 text-white"
           }`}
           onClick={toggleSidebar}
         >
