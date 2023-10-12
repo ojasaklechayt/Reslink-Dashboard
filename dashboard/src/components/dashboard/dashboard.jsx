@@ -79,9 +79,10 @@ const Dashboard = () => {
           component="form"
           sx={{
             p: "2px",
+            margin: "0px 0px 0px 2rem", // rem to provide responsiveness
             display: "flex",
             alignItems: "center",
-            width: "20%", // Updated width for responsiveness
+            width: "10%", // Updated width for responsiveness
             background: "black",
             borderRadius: "25px",
             fontFamily: "Poppins, sans-serif",
