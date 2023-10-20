@@ -97,6 +97,7 @@ An Open-Source `Dashboard web application`, That provides you with and Inuitive 
 
 <hr>
 <div align='center'>
+  Enjoy The Hacktoberfest!!!
 🔥Happy Coding!!🔥
 </div>
 
