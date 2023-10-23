@@ -97,7 +97,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
           alt={Small}
         />
         {/* Logo */}
-        <img className="mt-7 mb-10" src={Logo} alt="Logo" />
+        <a href="/"><img className="mt-7 mb-10" src={Logo} alt="Logo" /></a>
         {/* Main section buttons */}
         <div className="flex flex-col gap-y-4">
           {Buttons.map((button, index) => (
