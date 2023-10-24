@@ -88,7 +88,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
           sidebarVisible
             ? "transform translate-x-0 transition-transform duration-300 ease-in-out"
             : "transform -translate-x-full transition-transform duration-300 ease-in-out"
-        } lg:translate-x-0 fixed lg:relative flex flex-col items-center w-80 bg-white backdrop-blur-lg bg-opacity-[5%] font-poppins border border-[#475467] border-opacity-[50%]`}
+        } lg:translate-x-0 fixed lg:relative flex flex-col items-center w-70 bg-white backdrop-blur-lg bg-opacity-[5%] font-poppins border border-[#475467] border-opacity-[50%]`}
       >
         {/* Background image */}
         <img
@@ -129,9 +129,9 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
           ))}
         </div>
         {/* Divider */}
-        <div className="bg-[#475467] h-[2px] w-60 mt-5 rounded-md"></div>
+        <div className="bg-[#475467] h-[2px] w-40 mt-5 rounded-md"></div>
         {/* User information */}
-        <div className="flex flex-row gap-x-4 mt-5 justify-center items-center">
+        <div className="flex flex-row gap-x-1.5 mt-3 ml-1 justify-center items-center">
           <img src={Avatar} alt={Avatar} />
           <div className="text-white">
             <p className="font-bold">Olivia Rhye</p>
