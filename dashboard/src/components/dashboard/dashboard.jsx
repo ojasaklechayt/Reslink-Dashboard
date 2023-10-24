@@ -3,9 +3,8 @@ import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
-import Badge from "@mui/material/Badge";
+import Notifications from "./Notifications";
 import { Button } from "@mui/material";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import Person from "../../assets/person.svg";
 import Edit from "../../assets/edit.svg";
@@ -103,18 +102,9 @@ const Dashboard = () => {
           />
         </Paper>
         {/* Notifications and Create New Project Button */}
-        <div className="flex flex-row gap-x-5 items-center">
-          <Badge
-            badgeContent=""
-            color="error"
-            variant="dot"
-            anchorOrigin={{
-              vertical: "top",
-              horizontal: "right",
-            }}
-          >
-            <NotificationsNoneOutlinedIcon sx={{ color: "white" }} />
-          </Badge>
+        <div className="flex flex-row gap-x-5 items-center relative">
+          <Notifications />
+          {/* Create New Project Button */}
           <Button
             variant="contained"
             sx={{
