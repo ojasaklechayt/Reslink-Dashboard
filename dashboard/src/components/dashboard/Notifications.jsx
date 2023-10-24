@@ -42,7 +42,7 @@ function Notifications() {
       </button>
       {/* Notifications Menu */}
       {notificationsMenu && (
-        <div className="absolute top-12 -left-36 bg-[#31363c] border border-gray-100 h-36 w-44 rounded-xl text-white flex flex-col pt-3">
+        <div className="absolute top-12 left-4 z-10 sm:-left-36 bg-[#31363c] border border-gray-100 h-36 w-44 rounded-xl text-white flex flex-col pt-3">
           {menuItems.map((item, index) => (
             <div
               key={index}
