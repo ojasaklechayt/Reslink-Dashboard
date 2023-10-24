@@ -88,7 +88,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
           sidebarVisible
             ? "transform translate-x-0 transition-transform duration-300 ease-in-out"
             : "transform -translate-x-full transition-transform duration-300 ease-in-out"
-        } lg:translate-x-0 fixed lg:relative flex flex-col items-center h-screen w-80 bg-white backdrop-blur-lg bg-opacity-[5%] font-poppins border border-[#475467] border-opacity-[50%]`}
+        } lg:translate-x-0 fixed lg:relative flex flex-col items-center w-80 bg-white backdrop-blur-lg bg-opacity-[5%] font-poppins border border-[#475467] border-opacity-[50%]`}
       >
         {/* Background image */}
         <img
