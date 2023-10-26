@@ -81,7 +81,7 @@ const Dashboard = () => {
             margin: "0px 0px 0px 2rem", // rem to provide responsiveness
             display: "flex",
             alignItems: "center",
-            width: "10%", // Updated width for responsiveness
+            width: "70%", // Updated width for responsiveness
             height: "90%", // Updated height for responsiveness
             background: "black",
             borderRadius: "25px",
