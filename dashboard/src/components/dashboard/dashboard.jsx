@@ -72,16 +72,15 @@ const activitiesData = [
 const Dashboard = () => {
   return (
     <div className='min-h-screen w-screen flex flex-col'>
-      <div className='flex flex-row ml-5 mt-5 justify-between'>
+      <div className='flex flex-wrap md:flex-nowrap flex-row md:ml-5 mt-5 items-center gap-2 md:gap-4'>
         {/* Search Bar */}
         <Paper
           component='form'
+          className='max-h-[42px] ml-auto mb-2 w-[calc(100%_-_120px)] md:w-auto'
           sx={{
             p: '2px',
-            margin: '0px 0px 0px 2rem', // rem to provide responsiveness
             display: 'flex',
             alignItems: 'center',
-            width: '70%', // Updated width for responsiveness
             height: '90%', // Updated height for responsiveness
             background: 'black',
             borderRadius: '25px',
@@ -101,17 +100,19 @@ const Dashboard = () => {
             inputProps={{ 'aria-label': 'search' }}
           />
         </Paper>
-        {/* Notifications and Create New Project Button */}
-        <div className='flex flex-row gap-x-5 items-center relative'>
+        <div className='relative'>
           <Notifications />
+        </div>
+        {/* Notifications and Create New Project Button */}
+        <div className='flex flex-row gap-x-5 items-center relative w-full md:w-auto px-4 md:px-0 mb-2 mr-4'>
           {/* Create New Project Button */}
           <Button
             variant='contained'
+            className='w-full md:w-auto md:mr-[15px] max-h-[42px]'
             sx={{
               'background': '#3FA268',
               'borderRadius': '25px',
               'py': '10px',
-              'mr': '15px',
               'textTransform': 'none',
               'fontFamily': 'Poppins',
               '&:hover': {
