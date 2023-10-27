@@ -83,12 +83,10 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
       </div>
       <div
         // Set the z-index of the sidebar
-        style={{ zIndex: sidebarZIndex }}
+        // style={{ zIndex: sidebarZIndex }}
         className={`${
-          sidebarVisible
-            ? 'transform translate-x-0 transition-transform duration-300 ease-in-out'
-            : 'transform -translate-x-full transition-transform duration-300 ease-in-out'
-        } md:h-screen lg:translate-x-0 fixed lg:relative flex flex-col items-center w-70 bg-white backdrop-blur-lg bg-opacity-[5%] font-poppins border border-[#475467] border-opacity-[50%]`}
+          sidebarVisible ? 'translate-x-0 ' : '-translate-x-full'
+        } h-screen lg:translate-x-0 fixed transform transition-transform duration-300 ease-in-out lg:relative flex flex-col items-center w-70 bg-gray-900 backdrop-blur-lg bg-opacity-[55%] font-poppins border border-[#475467] border-opacity-[50%] z-10`}
       >
         {/* Background image */}
         <img
@@ -98,7 +96,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         />
         {/* Logo */}
         <a href='/'>
-          <img className='mt-7 mb-10' src={Logo} alt='Logo' />
+          <img className='mt-16 lg:mt-7 mb-10' src={Logo} alt='Logo' />
         </a>
         {/* Main section buttons */}
         <div className='flex flex-col gap-y-4'>
