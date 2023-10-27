@@ -1,20 +1,20 @@
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import Badge from "@mui/material/Badge";
-import { useState } from "react";
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import Badge from '@mui/material/Badge';
+import { useState } from 'react';
 
 const menuItems = [
   {
-    title: "Messages",
-    number: 5,
+    title: 'Messages',
+    number: 5
   },
   {
-    title: "Activities",
-    number: 2,
+    title: 'Activities',
+    number: 2
   },
   {
-    title: "Proposals",
-    number: 3,
-  },
+    title: 'Proposals',
+    number: 3
+  }
 ];
 
 function Notifications() {
@@ -23,33 +23,36 @@ function Notifications() {
   return (
     <>
       {/* Notifications Badge and Icon */}
-      <button className="hover:cursor-pointer hover:bg-[#31363c] py-2 px-2 rounded-md" onClick={() => setNotificationsMenu(!notificationsMenu)}>
+      <button
+        className='hover:cursor-pointer hover:bg-[#31363c] py-2 px-2 rounded-md mr-4 md:mx-0 md:ml-0 mb-2'
+        onClick={() => setNotificationsMenu(!notificationsMenu)}
+      >
         <Badge
-          badgeContent=""
-          color="error"
-          variant="dot"
+          badgeContent=''
+          color='error'
+          variant='dot'
           anchorOrigin={{
-            vertical: "top",
-            horizontal: "right",
+            vertical: 'top',
+            horizontal: 'right'
           }}
         >
           <NotificationsNoneOutlinedIcon
             sx={{
-              color: "white",
+              color: 'white'
             }}
           />
         </Badge>
       </button>
       {/* Notifications Menu */}
       {notificationsMenu && (
-        <div className="absolute top-12 left-4 z-10 sm:-left-36 bg-[#31363c] border border-gray-100 h-36 w-44 rounded-xl text-white flex flex-col pt-3">
+        <div className='absolute top-12 right-4 md:right-0 shadow-lg z-10 bg-[#31363c] border border-gray-100 h-36 w-44 rounded-xl text-white flex flex-col pt-3'>
           {menuItems.map((item, index) => (
             <div
               key={index}
-              className="flex justify-between hover:bg-[#2a2c34] py-2 px-4 hover:cursor-pointer"
+              className='flex justify-between hover:bg-[#2a2c34] py-2 px-4 hover:cursor-pointer'
             >
               <span>{item.title}</span>
-              <div className="rounded-full bg-[#3FA268] px-2">
+              <div className='rounded-full bg-[#3FA268] px-2'>
                 {item.number}
               </div>
             </div>
