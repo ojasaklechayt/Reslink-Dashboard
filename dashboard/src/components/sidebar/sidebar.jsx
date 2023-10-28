@@ -103,8 +103,8 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
           {Buttons.map((button, index) => (
             <div
               key={index}
-              className={`flex flex-row gap-x-2 pl-5 py-3 rounded-md w-60 cursor-pointer ${
-                selectedButton === index ? 'bg-[#101215]' : ''
+              className={`flex flex-row gap-x-2 pl-5 py-3 rounded-md w-60 hover:bg-[#3FA268] cursor-pointer ${
+                selectedButton === index ? 'bg-[#3FA268]' : ''
               }`}
               onClick={() => handleButtonClick(index)}
             >
@@ -118,8 +118,8 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
           {Support.map((support, index) => (
             <div
               key={index}
-              className={`flex flex-row gap-x-2 pl-5 py-3 rounded-md w-60 cursor-pointer ${
-                selectedButton === index + Buttons.length ? 'bg-[#101215]' : ''
+              className={`flex flex-row gap-x-2 pl-5 py-3 rounded-md w-60 hover:bg-[#3FA268]cursor-pointer ${
+                selectedButton === index + Buttons.length ? 'bg-[#3FA268]' : ''
               }`}
               onClick={() => handleButtonClick(index + Buttons.length)}
             >
